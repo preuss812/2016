@@ -1,9 +1,9 @@
-# First Robotics Team 812 2016 
+# First Robotics Team 812
 
 ## Game resources
 * [StrongHold video overview](https://www.youtube.com/watch?v=VqOKzoHJDjA)
 * [StrongHold Game & Season Materials](http://www.firstinspires.org/resource-library/frc/competition-manual-qa-system)
-* 
+ 
 ## Technical resources
 
 * [2016 FRC Control System](https://wpilib.screenstepslive.com/s/4485)
