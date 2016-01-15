@@ -295,3 +295,111 @@ java.io.FileNotFoundException: C:\Users\FRC812\eclipse\java-mars\eclipse\WPILib 
 
 !ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-12 22:31:59.100
 !MESSAGE Installedjava
+!SESSION 2016-01-14 17:25:51.730 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:26:07.238
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:26:07.248
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:26:07.344
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:26:07.349
+!MESSAGE Installedjava
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-14 17:32:15.591
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FRC812'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2016-01-14 17:35:14.948 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-14 17:35:27.273
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FRC812'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:35:28.387
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:35:28.391
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:35:28.393
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:35:28.395
+!MESSAGE Installedjava
+!SESSION 2016-01-14 17:37:37.590 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-01-14 17:37:49.814
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FRC812'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:37:51.026
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:37:51.028
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:37:51.030
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:37:51.036
+!MESSAGE Installedjava
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:42:50.006
+!MESSAGE [edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@33822750, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@25e95d04, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@6b5dc4bb, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@46b376bb, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@64a9719a, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@bc70176, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@eba64a9, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@53e1cd6b, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@7ceb432c, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@4f143176, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@12568b11, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@4f8186a5, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@69554e5a, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@7244d87, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@210c4071, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@627b5e5b, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@211ffbd0, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@472d201, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@473e0536]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:42:50.007
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@7f8f120c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@2110b756, edu.wpi.first.wpilib.plugins.core.wizards.Tag@33e09baf, edu.wpi.first.wpilib.plugins.core.wizards.Tag@4c02f50, edu.wpi.first.wpilib.plugins.core.wizards.Tag@35852b6, edu.wpi.first.wpilib.plugins.core.wizards.Tag@27d6ff8c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@105c253a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@156322ce, edu.wpi.first.wpilib.plugins.core.wizards.Tag@546f0f36, edu.wpi.first.wpilib.plugins.core.wizards.Tag@44d5a0a8, edu.wpi.first.wpilib.plugins.core.wizards.Tag@35d128fd, edu.wpi.first.wpilib.plugins.core.wizards.Tag@39a809db, edu.wpi.first.wpilib.plugins.core.wizards.Tag@1512a767, edu.wpi.first.wpilib.plugins.core.wizards.Tag@7c2b858d, edu.wpi.first.wpilib.plugins.core.wizards.Tag@4001dc35]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:47:24.866
+!MESSAGE [edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@2248583e, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@1dfd27fe, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@3b6f1227, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@38a77e1b, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@584e4899, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@2cf846b9, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@6f45872b, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@6c916b7e, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@4631ecf5, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@2892b704, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@6b2d01e2, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@c005d62, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@451f5e53, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@7808fb63, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@7b29d791, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@754c6edb, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@4a9e4be7, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@75f27234, edu.wpi.first.wpilib.plugins.java.wizards.examples.ExampleJavaProject@40d2a644]
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-01-14 17:47:24.867
+!MESSAGE [edu.wpi.first.wpilib.plugins.core.wizards.Tag@56fe2233, edu.wpi.first.wpilib.plugins.core.wizards.Tag@6e879a78, edu.wpi.first.wpilib.plugins.core.wizards.Tag@882364e, edu.wpi.first.wpilib.plugins.core.wizards.Tag@5db7419c, edu.wpi.first.wpilib.plugins.core.wizards.Tag@7aff1fa3, edu.wpi.first.wpilib.plugins.core.wizards.Tag@28790ede, edu.wpi.first.wpilib.plugins.core.wizards.Tag@31d07dd9, edu.wpi.first.wpilib.plugins.core.wizards.Tag@568c71de, edu.wpi.first.wpilib.plugins.core.wizards.Tag@548c7eab, edu.wpi.first.wpilib.plugins.core.wizards.Tag@3463851a, edu.wpi.first.wpilib.plugins.core.wizards.Tag@66f18fa, edu.wpi.first.wpilib.plugins.core.wizards.Tag@33588b68, edu.wpi.first.wpilib.plugins.core.wizards.Tag@416c28e, edu.wpi.first.wpilib.plugins.core.wizards.Tag@2cf5cc43, edu.wpi.first.wpilib.plugins.core.wizards.Tag@52a3a9ef]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-01-14 17:49:01.593
+!MESSAGE Running ant file: C:\Users\FRC812\workspace\FRC_2016\Getting Started\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-01-14 17:49:01.594
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-01-14 17:49:52.793
+!MESSAGE Running ant file: C:\Users\FRC812\workspace\FRC_2016\Getting Started\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-01-14 17:49:52.794
+!MESSAGE Targets: deploy, Mode: run
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-01-14 17:55:44.337
+!MESSAGE Running ant file: C:\Users\FRC812\workspace\FRC_2016\Getting Started\build.xml
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-01-14 17:55:44.338
+!MESSAGE Targets: deploy, Mode: run
