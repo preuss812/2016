@@ -46,11 +46,7 @@ public class DriveTrain extends Subsystem {
     public void takeJoystickInputs(Joystick left, Joystick right) {
     	//robotDrive41.tankDrive(left, right);
     //	robotDrive41.tankDrive(-left.getY(), -right.getY());
-    	// 2016-01-21 - experimented and found that Arcade drive works better.
-    	// The third parameter, squaredInputs, was not tried as true, so we should 
-    	// drive test is next time.
-    	robotDrive41.arcadeDrive(-right.getY(), -right.getX(), true);
- 
+    	robotDrive41.arcadeDrive(right, true);
     }
     
     public void stop() {
