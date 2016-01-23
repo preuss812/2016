@@ -41,30 +41,25 @@ public class AutonomousCommand extends Command {
     // Called just before this Command runs the first time
     protected void initialize() {
     	RobotMap.driveTrainRobotDrive41.drive(0, 0);
-    	RobotMap.driveTrainRobotDrive41.setExpiration(15.0);
     }
-    
-    Boolean isFin = false;
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	RobotMap.driveTrainRobotDrive41.drive(0.25, 0.0); // straight
     	try {
-			Thread.sleep(10*1000);
-   // 		for (int i = 0; i < Integer.MAX_VALUE; i ++) {
-    //			RobotMap.driveTrainRobotDrive41.drive(0.25, 0.0);
-    			//RobotMap.driveTrainRobotDrive41.wait(30);
-//    		}
+//			Thread.sleep(10*1000);
+    		for (int i = 0; i < 1000; i ++)
+    			RobotMap.driveTrainRobotDrive41.wait(30);
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();
+		//	e.printStackTrace();
 		}
-    	isFin = true;
+    	this.isFinished();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return isFin;
+        return false;
     }
 
     // Called once after isFinished returns true

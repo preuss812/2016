@@ -43,8 +43,6 @@ public class AutonomousCommand extends Command {
     	RobotMap.driveTrainRobotDrive41.drive(0, 0);
     	RobotMap.driveTrainRobotDrive41.setExpiration(15.0);
     }
-    
-    Boolean isFin = false;
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
@@ -59,12 +57,12 @@ public class AutonomousCommand extends Command {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	isFin = true;
+    	this.isFinished();
     }
 
     // Make this return true when this Command no longer needs to run execute()
     protected boolean isFinished() {
-        return isFin;
+        return false;
     }
 
     // Called once after isFinished returns true

@@ -2,4 +2,5 @@
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.AutonomousCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Joystick"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
 </qualifiedTypeNameHistroy>
