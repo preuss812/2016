@@ -73,8 +73,7 @@ public class RobotMap {
       compressor = new Compressor();
   //    rightSolenoid = new Solenoid(0); 
    //   leftSolenoid = new Solenoid(1);
-      grabber = new DoubleSolenoid(4,5);
-      System.out.println("grabber doublesolenoid defined");
+      grabber = new DoubleSolenoid(0,1);
       
     }
 }

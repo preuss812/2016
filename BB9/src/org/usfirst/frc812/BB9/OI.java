@@ -66,7 +66,7 @@ public class OI {
         leftJoystick = new Joystick(0);
         
         grabButton = new JoystickButton(leftJoystick,1);
-        
+        grabButton.whenPressed(new GrabCommand());
 
         // SmartDashboard Buttons
         SmartDashboard.putData("test drive: STOP", new DriveWithJoysticks());
