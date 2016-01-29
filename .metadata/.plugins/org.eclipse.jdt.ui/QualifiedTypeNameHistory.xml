@@ -6,7 +6,11 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Solenoid"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.JoystickButton"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.buttons.Button"/>
-<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.GrabCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Servo"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.Robot"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CameraServer"/>
 </qualifiedTypeNameHistroy>

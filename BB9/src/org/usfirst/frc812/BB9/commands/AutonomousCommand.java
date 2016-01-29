@@ -48,17 +48,16 @@ public class AutonomousCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
+    	Robot.grabberSubsystem.openGrabber();
+
     	RobotMap.driveTrainRobotDrive41.drive(0.25, 0.0); // straight
     	try {
 			Thread.sleep(10*1000);
-   // 		for (int i = 0; i < Integer.MAX_VALUE; i ++) {
-    //			RobotMap.driveTrainRobotDrive41.drive(0.25, 0.0);
-    			//RobotMap.driveTrainRobotDrive41.wait(30);
-//    		}
 		} catch (InterruptedException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+    	Robot.grabberSubsystem.closeGrabber();
     	isFin = true;
     }
 
