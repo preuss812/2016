@@ -42,6 +42,7 @@ public class CameraControl extends Subsystem {
 	}
 	
 	public double getVertical(){
+		Robot.driveTrain.
 		return (Robot.oi.leftJoystick.getRawAxis(2) +1)*90;
 	}
 	

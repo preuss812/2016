@@ -63,7 +63,7 @@ public class RobotMap {
         
         driveTrainRobotDrive41 = new RobotDrive(driveTrainLftFront, driveTrainLftBack,
               driveTrainRtFront, driveTrainRtBack);
-        driveTrainRobotDrive41.setSafetyEnabled(false);
+        driveTrainRobotDrive41.setSafetyEnabled(true);
         // if we want to reverse the understanding of the motors, something like the following
         // is advised for each of the motors.
         //   driveTrainRobotDrive41.setInvertedMotor(RobotDrive.MotorType.kRearLeft, false); 

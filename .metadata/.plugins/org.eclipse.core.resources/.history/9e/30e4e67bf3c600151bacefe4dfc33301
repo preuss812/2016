@@ -95,7 +95,7 @@ public class OI {
         cameraLeftLevel = new JoystickButton(leftJoystick,2);
         cameraLeftLevel.whenPressed(new CameraLeftLevel());
         
-        blackBox = new Joystick(2); // 2016-01-29 - added, but unused
+        blackBox = new Joystick(2);
         
         
         // SmartDashboard Buttons
