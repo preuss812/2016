@@ -53,6 +53,8 @@
 		<item value="false" key="expanded1"/>
 		<item value="true" key="expanded0"/>
 	</section>
+	<section name="RenameInformationPopup">
+	</section>
 	<section name="ClasspathContainerSelectionPage">
 		<item value="0" key="index"/>
 	</section>

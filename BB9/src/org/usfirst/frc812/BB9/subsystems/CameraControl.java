@@ -29,20 +29,28 @@ public class CameraControl extends Subsystem {
 		horizontal.setAngle(180.0);
 	}
 	
-	public void level(){
-		vertical.setAngle(getVertical());
+	public void levelLeftTrim(){
+		vertical.setAngle(getVerticalLeftJoystick());
 	}
 	public void up(){
-		this.level();
+		this.levelLeftTrim();
 		vertical.setAngle(180.0);
 	}
 	public void down(){
-		this.level();
+		this.levelLeftTrim();
 		vertical.setAngle(0.0);
 	}
 	
-	public double getVertical(){
+	public void levelRightTrim() {
+		vertical.setAngle(getVerticalRightJoystick());
+	}
+	
+	public double getVerticalLeftJoystick(){
 		return (Robot.oi.leftJoystick.getRawAxis(2) +1)*90;
+	}
+	
+	public double getVerticalRightJoystick(){
+		return (Robot.oi.rightJoystick.getRawAxis(2) +1)*90;
 	}
 	
 	
