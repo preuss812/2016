@@ -40,8 +40,8 @@ public class AutonomousCommand extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.driveTrainRobotDrive41.drive(0, 0);
-    	RobotMap.driveTrainRobotDrive41.setExpiration(15.0);
+    	RobotMap.dtProtoRobotDrive.drive(0, 0);
+    	RobotMap.dtProtoRobotDrive.setExpiration(15.0);
     }
     
     Boolean isFin = false;
@@ -50,7 +50,7 @@ public class AutonomousCommand extends Command {
     protected void execute() {
     	Robot.grabberSubsystem.openGrabber();
 
-    	RobotMap.driveTrainRobotDrive41.drive(0.25, 0.0); // straight
+    	RobotMap.dtProtoRobotDrive.drive(0.25, 0.0); // straight
     	try {
 			Thread.sleep(10*1000);
 		} catch (InterruptedException e) {
@@ -68,7 +68,7 @@ public class AutonomousCommand extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	RobotMap.driveTrainRobotDrive41.drive(0, 0);
+    	RobotMap.dtProtoRobotDrive.drive(0, 0);
     }
 
     // Called when another command which requires one or more of the same

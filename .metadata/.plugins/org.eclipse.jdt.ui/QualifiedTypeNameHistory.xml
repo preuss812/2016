@@ -9,8 +9,12 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.GrabCommand"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
-<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.Servo"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CameraServer"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.TalonSRX"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.SRXTest"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.DriveWithJoysticks"/>
 </qualifiedTypeNameHistroy>
