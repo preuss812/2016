@@ -17,3 +17,4 @@
 * [How to read Contour Values from NetworkTables in Java](https://wpilib.screenstepslive.com/s/4485/m/50711/l/479908-reading-array-values-published-by-networktables)
 * [Using GRIP for 2016 Game tutorial](https://wpilib.screenstepslive.com/s/4485/m/50711/l/481750-using-grip-for-the-2016-game)
 * [Identifying targets - The Math](https://wpilib.screenstepslive.com/s/4485/m/24194/l/288985-identifying-and-processing-the-targets)
+* [Team2168 CPP Example](https://github.com/Team2168/2168_Vision_Example)
