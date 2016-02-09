@@ -7,9 +7,9 @@ import edu.wpi.first.wpilibj.command.Command;
 /**
  *
  */
-public class CameraShooterLevel extends Command {
+public class CameraRightLevel extends Command {
 
-    public CameraShooterLevel() {
+    public CameraRightLevel() {
         // Use requires() here to declare subsystem dependencies
         // eg. requires(chassis);
     }

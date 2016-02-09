@@ -5,16 +5,26 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
 /**
  *
  */
-public class CameraShooter extends CommandGroup {
+public class CameraFrontBack extends CommandGroup {
+	private boolean facingBack = true;
     
-    public  CameraShooter() {
+    public  CameraFrontBack() {
         // Add Commands here:
         // e.g. addSequential(new Command1());
         //      addSequential(new Command2());
         // these will run in order.
-    	addSequential(new CameraRight());
-    	addSequential(new CameraRightLevel());
-
+    	if( facingBack ) {
+    		addSequential(new CameraLeft());
+    		addSequential(new CameraLeftLevel());
+    		facingBack = false;
+    	}
+    	else
+    	{
+    		addSequential(new CameraRight());
+    		addSequential(new CameraRightLevel());
+    		facingBack = true;
+    	}
+    		
         // To run multiple commands at the same time,
         // use addParallel()
         // e.g. addParallel(new Command1());
