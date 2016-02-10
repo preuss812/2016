@@ -17,4 +17,5 @@
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.SRXTest"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.DriveWithJoysticks"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
 </qualifiedTypeNameHistroy>

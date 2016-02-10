@@ -45,7 +45,7 @@ public class RobotMap {
     public static Compressor compressor;
     public static Solenoid leftSolenoid;
     public static Solenoid rightSolenoid;
-    public static DoubleSolenoid grabber;
+    public static DoubleSolenoid shooter;
     public static Servo cameraHorizontal;
     public static Servo cameraVertical;
     
@@ -80,16 +80,16 @@ public class RobotMap {
         dtProtoRobotDrive.setMaxOutput(1.0);
 
         // Production robot uses CAN bus Talon SRX speed controllers
-        dtSrxRightFront = new CANTalon(2);
-        dtSrxRightRear  = new CANTalon(3);
-        dtSrxLeftFront  = new CANTalon(4);
-        dtSrxLeftRear   = new CANTalon(5);
-        dtProductionRobotDrive = new RobotDrive(dtSrxLeftFront, dtSrxLeftRear, 
-        										dtSrxRightFront, dtSrxRightRear);
-        dtProductionRobotDrive.setSafetyEnabled(true);
-        dtProductionRobotDrive.setExpiration(0.1);
-        dtProductionRobotDrive.setSensitivity(0.5);
-        dtProductionRobotDrive.setMaxOutput(1.0);
+//        dtSrxRightFront = new CANTalon(2);
+//        dtSrxRightRear  = new CANTalon(3);
+//        dtSrxLeftFront  = new CANTalon(4);
+//        dtSrxLeftRear   = new CANTalon(5);
+//        dtProductionRobotDrive = new RobotDrive(dtSrxLeftFront, dtSrxLeftRear, 
+//        										dtSrxRightFront, dtSrxRightRear);
+//        dtProductionRobotDrive.setSafetyEnabled(true);
+//        dtProductionRobotDrive.setExpiration(0.1);
+//        dtProductionRobotDrive.setSensitivity(0.5);
+//        dtProductionRobotDrive.setMaxOutput(1.0);
         
 
 
@@ -97,8 +97,7 @@ public class RobotMap {
       compressor = new Compressor();
   //    rightSolenoid = new Solenoid(0); 
    //   leftSolenoid = new Solenoid(1);
-      grabber = new DoubleSolenoid(4,5);
-      System.out.println("grabber doublesolenoid defined");
+      shooter = new DoubleSolenoid(4,5);
       
       cameraHorizontal = new Servo(9);
       cameraVertical = new Servo(8);

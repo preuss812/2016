@@ -48,7 +48,6 @@ public class AutonomousCommand extends Command {
 
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
-    	Robot.grabberSubsystem.openGrabber();
 
     	RobotMap.dtProtoRobotDrive.drive(0.25, 0.0); // straight
     	try {
@@ -57,7 +56,6 @@ public class AutonomousCommand extends Command {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-    	Robot.grabberSubsystem.closeGrabber();
     	isFin = true;
     }
 
