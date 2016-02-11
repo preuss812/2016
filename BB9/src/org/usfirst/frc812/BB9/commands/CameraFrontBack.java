@@ -22,6 +22,7 @@ public class CameraFrontBack extends CommandGroup {
     public void start() {
    		Robot.cameraControl.right();
     	Robot.cameraControl.levelRightTrim();
+    	Robot.gyroSubsystem.showPosition();
        	started = true;
     }		
         // To run multiple commands at the same time,

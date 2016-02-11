@@ -5859,3 +5859,127 @@ java.net.UnknownHostException: services.gradle.org
 
 !ENTRY WPILib_Java_Robot_Development 1 0 2016-02-09 17:34:30.518
 !MESSAGE Class: ShooterControl Package: org.usfirst.frc812.BB9.subsystems
+!SESSION 2016-02-10 16:17:48.653 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-10 16:18:08.759
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FRC812'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-10 16:18:11.029
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-10 16:18:11.030
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-10 16:18:11.059
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-10 16:18:11.077
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 18:41:58.382
+!MESSAGE [org.usfirst.frc812.BB9.subsystems [in src [in BB9]]
+  CameraControl.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.Servo
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class CameraControl
+      Servo horizontal
+      Servo vertical
+      void center()
+      void left()
+      void right()
+      void levelLeftTrim()
+      void up()
+      void down()
+      void levelRightTrim()
+      double getVerticalLeftJoystick()
+      double getVerticalRightJoystick()
+      void initDefaultCommand()
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import org.usfirst.frc812.BB9.commands.*
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.SpeedController
+    import edu.wpi.first.wpilibj.Talon
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DriveTrain
+      RobotDrive robotDrive
+      void takeJoystickInputs(Joystick, Joystick)
+      void stop()
+      void initDefaultCommand()
+  [Working copy] ShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterSubsystem
+      DoubleSolenoid shooter
+      DoubleSolenoid.Value getShooterState()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  [Working copy] DoubleShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DoubleShooterSubsystem
+      DoubleSolenoid shooterLeft
+      DoubleSolenoid shooterRight
+      DoubleSolenoid.Value getShooterState()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 18:41:58.383
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 18:41:58.398
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 18:41:58.399
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-10 18:42:05.395
+!MESSAGE Class: GyroSubsystem Package: org.usfirst.frc812.BB9.subsystems
+
+!ENTRY org.eclipse.recommenders.rcp 2 15 2016-02-10 18:51:03.541
+!MESSAGE Failed to parse news feed
+!STACK 0
+java.net.UnknownHostException: www.codetrails.com
+	at java.net.Inet6AddressImpl.lookupAllHostAddr(Native Method)
+	at java.net.InetAddress$2.lookupAllHostAddr(Unknown Source)
+	at java.net.InetAddress.getAddressesFromNameService(Unknown Source)
+	at java.net.InetAddress.getAllByName0(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at java.net.InetAddress.getAllByName(Unknown Source)
+	at org.apache.http.impl.conn.SystemDefaultDnsResolver.resolve(SystemDefaultDnsResolver.java:44)
+	at org.apache.http.impl.conn.HttpClientConnectionOperator.connect(HttpClientConnectionOperator.java:102)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:319)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:363)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:219)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:195)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:86)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:108)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:184)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:82)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:57)
+	at org.apache.http.client.fluent.Executor.execute(Executor.java:206)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.getRSSFeed(CheckForProjectNewsJob.java:138)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.doRun(CheckForProjectNewsJob.java:89)
+	at org.eclipse.recommenders.internal.rcp.news.CheckForProjectNewsJob.run(CheckForProjectNewsJob.java:62)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)

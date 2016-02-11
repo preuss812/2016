@@ -47,6 +47,9 @@ public class DriveTrain extends Subsystem {
     	// The third parameter, squaredInputs, was not tried as true, so we should 
     	// drive test is next time.
     	robotDrive.arcadeDrive(-right.getY(), -right.getX(), true);
+//    	System.out.println("Gyro Angle: " + RobotMap.gyro.getAngle() +
+//    						" Center: " + RobotMap.gyro.getCenter() + 
+//    						" Rate: " + RobotMap.gyro.getRate());
  
     }
     

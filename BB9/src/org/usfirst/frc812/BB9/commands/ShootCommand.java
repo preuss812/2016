@@ -10,7 +10,7 @@ public class ShootCommand extends Command {
 
 	public ShootCommand() {
 		System.out.println("ShootCommand");
-		requires(Robot.shooterSubsystem);
+		requires(Robot.doubleShooterSubsystem);
 		setTimeout(1.0);
 	}
 	
@@ -18,7 +18,7 @@ public class ShootCommand extends Command {
 	protected void initialize() {
 		// TODO Auto-generated method stub
 		System.out.println("---> ShootCommand.initialized");
-		Robot.shooterSubsystem.releaseCatapult();
+		Robot.doubleShooterSubsystem.releaseCatapult();
 	}
 
 	@Override
@@ -34,7 +34,7 @@ public class ShootCommand extends Command {
 	@Override
 	protected void end() {
 		// TODO Auto-generated method stub
-		Robot.shooterSubsystem.retractCatapult();
+		Robot.doubleShooterSubsystem.retractCatapult();
 		System.out.println("----> ShootCommand.end");
 	}
 
