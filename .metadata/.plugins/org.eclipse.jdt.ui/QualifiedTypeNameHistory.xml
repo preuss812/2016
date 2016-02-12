@@ -15,8 +15,8 @@
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.SRXTest"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.CANTalon"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.DriveWithJoysticks"/>
-<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogGyro"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
 <fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DoubleSolenoid.Value"/>
 </qualifiedTypeNameHistroy>

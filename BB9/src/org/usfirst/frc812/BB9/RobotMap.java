@@ -100,8 +100,8 @@ public class RobotMap {
   //    rightSolenoid = new Solenoid(0); 
    //   leftSolenoid = new Solenoid(1);
       shooter = new DoubleSolenoid(0,4,5);
-      shootLeft = new DoubleSolenoid(0,0,1);
-      shootRight = new DoubleSolenoid(0,2,3);
+      shootLeft = new DoubleSolenoid(8,0,1);
+      shootRight = new DoubleSolenoid(8,2,3);
       gyro = new AnalogGyro(0);
       
       cameraHorizontal = new Servo(9);

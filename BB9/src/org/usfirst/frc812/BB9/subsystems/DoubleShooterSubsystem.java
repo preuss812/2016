@@ -40,6 +40,10 @@ public class DoubleShooterSubsystem extends Subsystem {
 		 return leftValue;
 	 }
 	 
+	 public void shootersOff() {
+	    	shooterLeft.set(DoubleSolenoid.Value.kOff);
+	    	shooterRight.set(DoubleSolenoid.Value.kOff);
+	 }
     public void releaseCatapult() {
     	shooterLeft.set(DoubleSolenoid.Value.kReverse);
     	shooterRight.set(DoubleSolenoid.Value.kReverse);
