@@ -41,8 +41,8 @@ public class AutonomousCommand extends Command {
 
     // Called just before this Command runs the first time
     protected void initialize() {
-    	RobotMap.dtProtoRobotDrive.drive(0, 0);
-    	RobotMap.dtProtoRobotDrive.setExpiration(0.1);
+    	RobotMap.dtProductionRobotDrive.drive(0, 0);
+    	RobotMap.dtProductionRobotDrive.setExpiration(0.1);
     	RobotMap.gyro.reset();
     }
     
@@ -50,7 +50,7 @@ public class AutonomousCommand extends Command {
     // Called repeatedly when this Command is scheduled to run
     protected void execute() {
     	double angle;
-    	RobotMap.dtProtoRobotDrive.drive(0.50, Robot.gyroSubsystem.calcCurve()); // straight
+    	RobotMap.dtProductionRobotDrive.drive(0.50, Robot.gyroSubsystem.calcCurve()); // straight
     	Robot.gyroSubsystem.showPosition();
     }
 
@@ -61,7 +61,7 @@ public class AutonomousCommand extends Command {
 
     // Called once after isFinished returns true
     protected void end() {
-    	RobotMap.dtProtoRobotDrive.drive(0, 0);
+    	RobotMap.dtProductionRobotDrive.drive(0, 0);
     }
 
     // Called when another command which requires one or more of the same

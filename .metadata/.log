@@ -6128,3 +6128,799 @@ org.eclipse.swt.SWTException: Widget is disposed
 	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-02-16 16:05:59.065 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-16 16:06:17.217
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FRC812'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 16:06:19.776
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 16:06:19.777
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 16:06:19.804
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 16:06:19.856
+!MESSAGE Installedjava
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-02-16 16:07:22.079
+!MESSAGE Cannot download published Gradle versions.
+!STACK 0
+java.net.UnknownHostException: services.gradle.org
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:134)
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.create(PublishedGradleVersionsWrapper.java:40)
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.<init>(PublishedGradleVersionsWrapper.java:35)
+	at org.eclipse.buildship.core.CorePlugin.createPublishedGradleVersions(CorePlugin.java:166)
+	at org.eclipse.buildship.core.CorePlugin.registerServices(CorePlugin.java:139)
+	at org.eclipse.buildship.core.CorePlugin.start(CorePlugin.java:102)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.console.ConsolePageParticipantExtension.createDelegate(ConsolePageParticipantExtension.java:72)
+	at org.eclipse.ui.internal.console.ConsoleManager.getPageParticipants(ConsoleManager.java:455)
+	at org.eclipse.ui.internal.console.ConsoleView.doCreatePage(ConsoleView.java:317)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768)
+	at org.eclipse.ui.internal.console.ConsoleView$4.run(ConsoleView.java:398)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:55:46.227
+!MESSAGE [org.usfirst.frc812.BB9.subsystems [in src [in BB9]]
+  [Working copy] DoubleShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DoubleShooterSubsystem
+      DoubleSolenoid shooterLeft
+      DoubleSolenoid shooterRight
+      DoubleSolenoid.Value getShooterState()
+      void shootersOff()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  CameraControl.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.Servo
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class CameraControl
+      Servo horizontal
+      Servo vertical
+      void center()
+      void left()
+      void right()
+      void levelLeftTrim()
+      void up()
+      void down()
+      void levelRightTrim()
+      double getVerticalLeftJoystick()
+      double getVerticalRightJoystick()
+      void initDefaultCommand()
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import org.usfirst.frc812.BB9.commands.*
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.SpeedController
+    import edu.wpi.first.wpilibj.Talon
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DriveTrain
+      RobotDrive robotDrive
+      void takeJoystickInputs(Joystick, Joystick)
+      void stop()
+      void initDefaultCommand()
+  GyroSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.AnalogGyro
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class GyroSubsystem
+      AnalogGyro gyro
+      double kP
+      void initDefaultCommand()
+      void showPosition()
+      double get_kP()
+      double calcCurve()
+  ShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterSubsystem
+      DoubleSolenoid shooter
+      DoubleSolenoid.Value getShooterState()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:55:46.228
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:55:46.249
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:55:46.252
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:55:55.308
+!MESSAGE Class: BallGatherer Package: org.usfirst.frc812.BB9.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:59:55.133
+!MESSAGE [org.usfirst.frc812.BB9.commands [in src [in BB9]]
+  CameraDown.java (not open)
+  [Working copy] AutonomousCommand.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc812.BB9.Robot
+    class AutonomousCommand
+      AutonomousCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  CameraCenter.java (not open)
+  CameraLevel.java (not open)
+  ShootCommand.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Command
+    class ShootCommand
+      ShootCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  CameraRightLevel.java (not open)
+  CameraShooter.java (not open)
+  CameraFrontBack.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.Robot
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class CameraFrontBack
+      boolean started
+      boolean isRunning()
+      void cancel()
+      void start()
+  CameraBall.java (not open)
+  CameraLeft.java (not open)
+  CameraLeftLevel.java (not open)
+  CameraRight.java (not open)
+  CameraUp.java (not open)
+  DriveWithJoysticks.java
+    package org.usfirst.frc812.BB9.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc812.BB9.Robot
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:59:55.134
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:59:55.150
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 16:59:55.152
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:00:05.470
+!MESSAGE Class: BallGatherer Package: org.usfirst.frc812.BB9.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:25:11.067
+!MESSAGE [org.usfirst.frc812.BB9.subsystems [in src [in BB9]]
+  [Working copy] DoubleShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DoubleShooterSubsystem
+      DoubleSolenoid shooterLeft
+      DoubleSolenoid shooterRight
+      DoubleSolenoid.Value getShooterState()
+      void shootersOff()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  CameraControl.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.Servo
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class CameraControl
+      Servo horizontal
+      Servo vertical
+      void center()
+      void left()
+      void right()
+      void levelLeftTrim()
+      void up()
+      void down()
+      void levelRightTrim()
+      double getVerticalLeftJoystick()
+      double getVerticalRightJoystick()
+      void initDefaultCommand()
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import org.usfirst.frc812.BB9.commands.*
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.SpeedController
+    import edu.wpi.first.wpilibj.Talon
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DriveTrain
+      RobotDrive robotDrive
+      void takeJoystickInputs(Joystick, Joystick)
+      void stop()
+      void initDefaultCommand()
+  GyroSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.AnalogGyro
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class GyroSubsystem
+      AnalogGyro gyro
+      double kP
+      void initDefaultCommand()
+      void showPosition()
+      double get_kP()
+      double calcCurve()
+  [Working copy] ShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterSubsystem
+      DoubleSolenoid shooter
+      DoubleSolenoid.Value getShooterState()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  [Working copy] BallGathererSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class BallGathererSubsystem
+      DoubleSolenoid ballGatherer
+      void initDefaultCommand()
+      void up()
+      void down()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:25:11.068
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:25:11.076
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:25:11.078
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:25:23.812
+!MESSAGE Class: GathererMotorSubsystem Package: org.usfirst.frc812.BB9.subsystems
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:28:21.648
+!MESSAGE [org.usfirst.frc812.BB9.commands [in src [in BB9]]
+  CameraDown.java (not open)
+  [Working copy] AutonomousCommand.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc812.BB9.Robot
+    class AutonomousCommand
+      AutonomousCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  CameraCenter.java (not open)
+  CameraLevel.java (not open)
+  ShootCommand.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Command
+    class ShootCommand
+      ShootCommand()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  CameraRightLevel.java (not open)
+  CameraShooter.java (not open)
+  [Working copy] CameraFrontBack.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.Robot
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class CameraFrontBack
+      boolean started
+      boolean isRunning()
+      void cancel()
+      void start()
+  CameraBall.java (not open)
+  CameraLeft.java (not open)
+  CameraLeftLevel.java (not open)
+  CameraRight.java (not open)
+  CameraUp.java (not open)
+  DriveWithJoysticks.java
+    package org.usfirst.frc812.BB9.commands
+    import edu.wpi.first.wpilibj.command.Command
+    import org.usfirst.frc812.BB9.Robot
+    class DriveWithJoysticks
+      DriveWithJoysticks()
+      void initialize()
+      void execute()
+      boolean isFinished()
+      void end()
+      void interrupted()
+  [Working copy] BallGatherer.java
+    package org.usfirst.frc812.BB9.commands
+    import org.usfirst.frc812.BB9.Robot
+    import edu.wpi.first.wpilibj.command.CommandGroup
+    class BallGatherer
+      boolean started
+      boolean isRunning()
+      void cancel()
+      void start()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:28:21.649
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:28:21.661
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:28:21.662
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:28:34.453
+!MESSAGE Class: GathererMotor Package: org.usfirst.frc812.BB9.commands
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:38:05.590
+!MESSAGE [org.usfirst.frc812.BB9.subsystems [in src [in BB9]]
+  [Working copy] DoubleShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DoubleShooterSubsystem
+      DoubleSolenoid shooterLeft
+      DoubleSolenoid shooterRight
+      DoubleSolenoid.Value getShooterState()
+      void shootersOff()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  CameraControl.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.Servo
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class CameraControl
+      Servo horizontal
+      Servo vertical
+      void center()
+      void left()
+      void right()
+      void levelLeftTrim()
+      void up()
+      void down()
+      void levelRightTrim()
+      double getVerticalLeftJoystick()
+      double getVerticalRightJoystick()
+      void initDefaultCommand()
+  [Working copy] DriveTrain.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import org.usfirst.frc812.BB9.commands.*
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.SpeedController
+    import edu.wpi.first.wpilibj.Talon
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DriveTrain
+      RobotDrive robotDrive
+      void takeJoystickInputs(Joystick, Joystick)
+      void stop()
+      void initDefaultCommand()
+  [Working copy] GyroSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.AnalogGyro
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class GyroSubsystem
+      AnalogGyro gyro
+      double kP
+      void initDefaultCommand()
+      void showPosition()
+      double get_kP()
+      double calcCurve()
+  [Working copy] ShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterSubsystem
+      DoubleSolenoid shooter
+      DoubleSolenoid.Value getShooterState()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  [Working copy] BallGathererSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class BallGathererSubsystem
+      DoubleSolenoid ballGatherer
+      void initDefaultCommand()
+      void up()
+      void down()
+  [Working copy] GathererMotorSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class GathererMotorSubsystem
+      void initDefaultCommand()
+      void forward()
+      void reverse()
+      void stop()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:38:05.591
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:38:05.602
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:38:05.603
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 17:38:13.011
+!MESSAGE Class: ControlBoxSubsystem Package: org.usfirst.frc812.BB9.subsystems
+!SESSION 2016-02-16 18:24:21.010 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.java.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.java.product
+
+!ENTRY org.eclipse.egit.ui 2 0 2016-02-16 18:24:38.154
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\FRC812'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 18:24:40.288
+!MESSAGE Installing tools if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 18:24:40.289
+!MESSAGE Installedtools
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 18:24:40.291
+!MESSAGE Installing java if necessary
+
+!ENTRY edu.wpi.first.wpilib.plugins.core 1 0 2016-02-16 18:24:40.292
+!MESSAGE Installedjava
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:25:14.342
+!MESSAGE [org.usfirst.frc812.BB9.subsystems [in src [in BB9]]
+  GathererMotorSubsystem.java (not open)
+  DoubleShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DoubleShooterSubsystem
+      DoubleSolenoid shooterLeft
+      DoubleSolenoid shooterRight
+      DoubleSolenoid.Value getShooterState()
+      void shootersOff()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  CameraControl.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.Robot
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.Servo
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class CameraControl
+      Servo horizontal
+      Servo vertical
+      void center()
+      void left()
+      void right()
+      void levelLeftTrim()
+      void up()
+      void down()
+      void levelRightTrim()
+      double getVerticalLeftJoystick()
+      double getVerticalRightJoystick()
+      void initDefaultCommand()
+  DriveTrain.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import org.usfirst.frc812.BB9.commands.*
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.RobotDrive
+    import edu.wpi.first.wpilibj.SpeedController
+    import edu.wpi.first.wpilibj.Talon
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class DriveTrain
+      RobotDrive robotDrive
+      void takeJoystickInputs(Joystick, Joystick)
+      void stop()
+      void initDefaultCommand()
+  GyroSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.AnalogGyro
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class GyroSubsystem
+      AnalogGyro gyro
+      double kP
+      void initDefaultCommand()
+      void showPosition()
+      double get_kP()
+      double calcCurve()
+  BallGathererSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class BallGathererSubsystem
+      DoubleSolenoid ballGatherer
+      void initDefaultCommand()
+      void up()
+      void down()
+  ShooterSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.RobotMap
+    import edu.wpi.first.wpilibj.DoubleSolenoid
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ShooterSubsystem
+      DoubleSolenoid shooter
+      DoubleSolenoid.Value getShooterState()
+      void releaseCatapult()
+      void retractCatapult()
+      void initDefaultCommand()
+  ControlBoxSubsystem.java
+    package org.usfirst.frc812.BB9.subsystems
+    import org.usfirst.frc812.BB9.Robot
+    import edu.wpi.first.wpilibj.Joystick
+    import edu.wpi.first.wpilibj.command.Subsystem
+    class ControlBoxSubsystem
+      void initDefaultCommand()]
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:25:14.343
+!MESSAGE class org.eclipse.jdt.internal.core.PackageFragment
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:25:14.369
+!MESSAGE initialize
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:25:14.370
+!MESSAGE Project: P/BB9
+
+!ENTRY WPILib_Java_Robot_Development 1 0 2016-02-16 18:25:19.915
+!MESSAGE Class: fred Package: org.usfirst.frc812.BB9.subsystems
+
+!ENTRY org.eclipse.m2e.logback.appender 4 0 2016-02-16 18:26:33.219
+!MESSAGE Cannot download published Gradle versions.
+!STACK 0
+java.net.UnknownHostException: services.gradle.org
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at sun.security.ssl.SSLSocketImpl.connect(Unknown Source)
+	at sun.security.ssl.BaseSSLSocketImpl.connect(Unknown Source)
+	at sun.net.NetworkClient.doConnect(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.http.HttpClient.openServer(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.<init>(Unknown Source)
+	at sun.net.www.protocol.https.HttpsClient.New(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.getNewHttpClient(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.plainConnect(Unknown Source)
+	at sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream0(Unknown Source)
+	at sun.net.www.protocol.http.HttpURLConnection.getInputStream(Unknown Source)
+	at sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(Unknown Source)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:167)
+	at com.gradleware.tooling.toolingutils.distribution.PublishedGradleVersions.create(PublishedGradleVersions.java:134)
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.create(PublishedGradleVersionsWrapper.java:40)
+	at org.eclipse.buildship.core.util.gradle.PublishedGradleVersionsWrapper.<init>(PublishedGradleVersionsWrapper.java:35)
+	at org.eclipse.buildship.core.CorePlugin.createPublishedGradleVersions(CorePlugin.java:166)
+	at org.eclipse.buildship.core.CorePlugin.registerServices(CorePlugin.java:139)
+	at org.eclipse.buildship.core.CorePlugin.start(CorePlugin.java:102)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:771)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl$3.run(BundleContextImpl.java:1)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.startActivator(BundleContextImpl.java:764)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:721)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.sources.SingleSourcePackage.loadClass(SingleSourcePackage.java:36)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:398)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.Class.getDeclaredConstructors0(Native Method)
+	at java.lang.Class.privateGetDeclaredConstructors(Unknown Source)
+	at java.lang.Class.getConstructor0(Unknown Source)
+	at java.lang.Class.newInstance(Unknown Source)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.loadBundleActivator(BundleContextImpl.java:755)
+	at org.eclipse.osgi.internal.framework.BundleContextImpl.start(BundleContextImpl.java:706)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.startWorker0(EquinoxBundle.java:941)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle$EquinoxModule.startWorker(EquinoxBundle.java:318)
+	at org.eclipse.osgi.container.Module.doStart(Module.java:571)
+	at org.eclipse.osgi.container.Module.start(Module.java:439)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:454)
+	at org.eclipse.osgi.internal.hooks.EclipseLazyStarter.postFindLocalClass(EclipseLazyStarter.java:107)
+	at org.eclipse.osgi.internal.loader.classpath.ClasspathManager.findLocalClass(ClasspathManager.java:531)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.findLocalClass(ModuleClassLoader.java:324)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findLocalClass(BundleLoader.java:327)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:402)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:352)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:344)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:573)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:174)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:905)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:55)
+	at org.eclipse.ui.internal.console.ConsolePageParticipantExtension.createDelegate(ConsolePageParticipantExtension.java:72)
+	at org.eclipse.ui.internal.console.ConsoleManager.getPageParticipants(ConsoleManager.java:455)
+	at org.eclipse.ui.internal.console.ConsoleView.doCreatePage(ConsoleView.java:317)
+	at org.eclipse.ui.part.PageBookView.createPage(PageBookView.java:422)
+	at org.eclipse.ui.part.PageBookView.partActivated(PageBookView.java:768)
+	at org.eclipse.ui.internal.console.ConsoleView$4.run(ConsoleView.java:398)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:135)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:4155)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3772)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
