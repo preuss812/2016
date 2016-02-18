@@ -15,11 +15,11 @@ public class BallGatherer extends CommandGroup {
     }
 
     public void cancel() {
-    	Robot.ballGatherer.down();
+    	Robot.ballGathererSubsystem.down();
    		started = false;
     }
     public void start() {
-   		Robot.ballGatherer.up();
+   		Robot.ballGathererSubsystem.up();
        	started = true;
     }		
         // To run multiple commands at the same time,

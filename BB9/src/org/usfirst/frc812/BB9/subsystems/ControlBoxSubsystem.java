@@ -5,14 +5,26 @@ import org.usfirst.frc812.BB9.RobotMap;
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
 
+
 /**
  *
  */
+
+
 public class ControlBoxSubsystem extends Subsystem {
     
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
+	public static final int CB1 = 2;
+	public static final int CB2 = 4;
+	public static final int CB3 = 8;
+	public static final int CB4 = 16;
+	public static final int CB5 = 32;
+	public static final int CB6 = 64;
+	public static final int CB7 = 128;
 
+	public int flagBits = 0;
+	
 	Joystick cb = RobotMap.controlBox;
 			
     public void initDefaultCommand() {
@@ -20,20 +32,32 @@ public class ControlBoxSubsystem extends Subsystem {
         //setDefaultCommand(new MySpecialCommand());
     }
 
-    public int readBits() {
-    	int flagBits = 0;
+    public void readBits() {
+    	flagBits = 0;
     	for (int i = 1; i<=7; i++) {
     		if(cb.getRawButton(i)) {
-    			flagBits = flagBits | 1 << i;
-    			System.out.println("bit: " + i + " true");
+    			flagBits |= 1 << i;
     		}
     	}
-    	return flagBits;
+    }
+    public boolean isSet(int flag) {
+    	int flagMask = 1 << flag;
+    	if( (flagBits & flagMask) == flagMask ) {
+    		return true;
+    	} else {
+    		return false;
+    	}
     }
     public void printBits() {
-    	int bits;
-    	bits = readBits();
-    	System.out.println("ControlBox bits: " + Integer.toBinaryString(bits));
+    	readBits();
+    	System.out.println("ControlBox bits: " + Integer.toBinaryString(flagBits));
+    	for (int i = 1; i<=7; i++) {
+    		if( isSet(i) )
+    			System.out.println("switch " + i + " on");
+    	}
+
+    	
+    	
     }
 
 }
