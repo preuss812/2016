@@ -2,12 +2,13 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="DriveTrain" key="selection"/>
+		<item value="CANTalon" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="CANTalon"/>
 			<item value="drivetraine"/>
 			<item value="compressor"/>
 			<item value="control"/>
@@ -15,7 +16,6 @@
 			<item value="shooter"/>
 			<item value="GyroSubsystem"/>
 			<item value="controlboxsubsystem"/>
-			<item value="get"/>
 		</list>
 		<list key="replacehistory">
 		</list>

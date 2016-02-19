@@ -18,8 +18,6 @@ public class DoubleShooterSubsystem extends Subsystem {
 	 public DoubleSolenoid.Value getShooterState() {
 		 DoubleSolenoid.Value leftValue = shooterLeft.get();
 		 DoubleSolenoid.Value rightValue = shooterRight.get();
-		 DoubleSolenoid.Value returnValue;
-		 
 		 if ( leftValue != rightValue) {
 			System.out.println("The left/right shooters dont match! " +
 		                       "left: " + leftValue + " right: " + rightValue);

@@ -55,9 +55,12 @@ public class ControlBoxSubsystem extends Subsystem {
     		if( isSet(i) )
     			System.out.println("switch " + i + " on");
     	}
-
-    	
-    	
+    	System.out.println("ControlBox pot 0: " + getPotValue(0));
+    	System.out.println("ControlBox pot 1: " + getPotValue(1));
+    }
+    
+    public double getPotValue(int axis) {
+    	return cb.getRawAxis(axis);
     }
 
 }

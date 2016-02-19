@@ -1,29 +1,20 @@
 package org.usfirst.frc812.BB9.commands;
 
-import org.usfirst.frc812.BB9.Robot;
-
 import edu.wpi.first.wpilibj.command.CommandGroup;
 
 /**
  *
  */
-public class BallGatherer extends CommandGroup {
-    private boolean started = false;
+public class ShootSequenceCommand extends CommandGroup {
     
-    public boolean isRunning() {
-    	return started;
-    }
-
-    public void cancel() {
-    	Robot.ballGathererSubsystem.down();
-   		Robot.grabberSensorSubsystem.print();
-   		started = false;
-    }
-    public void start() {
-   		Robot.ballGathererSubsystem.up();
-   		Robot.grabberSensorSubsystem.print();
-       	started = true;
-    }		
+    public  ShootSequenceCommand() {
+        // Add Commands here:
+        // e.g. addSequential(new Command1());
+        //      addSequential(new Command2());
+        // these will run in order.
+    	addSequential(new BallGathererDownAndLock());
+    	addSequential(new ShootCommand());
+    	addSequential(new BallGathererUnlock());
         // To run multiple commands at the same time,
         // use addParallel()
         // e.g. addParallel(new Command1());
@@ -35,4 +26,5 @@ public class BallGatherer extends CommandGroup {
         // e.g. if Command1 requires chassis, and Command2 requires arm,
         // a CommandGroup containing them would require both the chassis and the
         // arm.
+    }
 }

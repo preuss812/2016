@@ -30,13 +30,14 @@ public class GathererMotorSubsystem extends Subsystem {
     	if( ! Robot.controlBoxSubsystem.isSet(1) && ! Robot.controlBoxSubsystem.isSet(2) ) {
     		reverse();
     	}
+
     }
-    
+
     public void forward() {
-    	RobotMap.gathererMotor.set(0.5);
+    	RobotMap.gathererMotor.set((Robot.controlBoxSubsystem.getPotValue(0)+1)*0.4);
     }
     public void reverse() {
-    	RobotMap.gathererMotor.set(-0.5);
+    	RobotMap.gathererMotor.set(-(Robot.controlBoxSubsystem.getPotValue(0)+1)*0.4);
     }
     public void stop() {
     	RobotMap.gathererMotor.set(0.0);

@@ -13,16 +13,25 @@ public class BallGathererSubsystem extends Subsystem {
     // Put methods for controlling this subsystem
     // here. Call these from Commands.
 	private DoubleSolenoid ballGatherer = RobotMap.ballGatherer ;
+	private boolean motionLock = false;
 
 	public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
     }
     public void up(){
-    	ballGatherer.set(DoubleSolenoid.Value.kForward);
+    	if (!motionLock)
+    		ballGatherer.set(DoubleSolenoid.Value.kReverse);
     }
     public void down(){
-    	ballGatherer.set(DoubleSolenoid.Value.kReverse);
+    	if (!motionLock)
+    		ballGatherer.set(DoubleSolenoid.Value.kForward);
+    }
+    public void setMotionLock() {
+    	motionLock = true;
+    }
+    public void unsetMotionLock() {
+    	motionLock = false;
     }
 }
 
