@@ -1,5 +1,6 @@
 package org.usfirst.frc812.BB9.subsystems;
 
+import org.usfirst.frc812.BB9.Robot;
 import org.usfirst.frc812.BB9.RobotMap;
 
 import edu.wpi.first.wpilibj.Joystick;
@@ -57,6 +58,7 @@ public class ControlBoxSubsystem extends Subsystem {
     	}
     	System.out.println("ControlBox pot 0: " + getPotValue(0));
     	System.out.println("ControlBox pot 1: " + getPotValue(1));
+    	System.out.println("Intake Position Sensor: " + Robot.grabberSensorSubsystem.get());
     }
     
     public double getPotValue(int axis) {

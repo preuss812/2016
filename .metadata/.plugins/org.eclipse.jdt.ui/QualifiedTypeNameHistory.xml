@@ -22,4 +22,5 @@
 <fullyQualifiedTypeName name="edu.wpi.first.wpilibj.DigitalInput"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.GathererMotor"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.Robot"/>
+<fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.CameraVerticalContinuousCommand"/>
 </qualifiedTypeNameHistroy>

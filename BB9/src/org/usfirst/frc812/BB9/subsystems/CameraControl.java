@@ -2,6 +2,7 @@ package org.usfirst.frc812.BB9.subsystems;
 
 import org.usfirst.frc812.BB9.Robot;
 import org.usfirst.frc812.BB9.RobotMap;
+import org.usfirst.frc812.BB9.commands.CameraVerticalContinuousCommand;
 
 import edu.wpi.first.wpilibj.Servo;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -57,6 +58,7 @@ public class CameraControl extends Subsystem {
     public void initDefaultCommand() {
         // Set the default command for a subsystem here.
         //setDefaultCommand(new MySpecialCommand());
+    	setDefaultCommand(new CameraVerticalContinuousCommand());
     }
 }
 

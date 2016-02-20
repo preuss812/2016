@@ -18,7 +18,9 @@ public class ShootCommand extends Command {
 	protected void initialize() {
 		// TODO Auto-generated method stub
 		System.out.println("---> ShootCommand.initialized");
-		Robot.doubleShooterSubsystem.releaseCatapult();
+		if ( !Robot.grabberSensorSubsystem.get() ){
+			Robot.doubleShooterSubsystem.releaseCatapult();
+		}
 	}
 
 	@Override

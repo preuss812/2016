@@ -8,24 +8,24 @@ import edu.wpi.first.wpilibj.command.CommandGroup;
  *
  */
 public class CameraFrontBack extends CommandGroup {
-    private boolean started = false;
+    public static boolean forward = false;
     
     public boolean isRunning() {
-    	return started;
+    	return forward;
     }
 
     public void cancel() {
    		Robot.cameraControl.left();
     	Robot.cameraControl.levelLeftTrim();
     	System.out.println("CameraFrontBack leftTrim");
-   		started = false;
+   		forward = false;
     }
     public void start() {
    		Robot.cameraControl.right();
     	Robot.cameraControl.levelRightTrim();
     	Robot.gyroSubsystem.showPosition();
     	System.out.println("CameraFrontBack rightTrim");
-       	started = true;
+       	forward = true;
     }		
         // To run multiple commands at the same time,
         // use addParallel()
