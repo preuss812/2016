@@ -11,6 +11,7 @@
 
 package org.usfirst.frc812.BB9.subsystems;
 
+import org.usfirst.frc812.BB9.Robot;
 import org.usfirst.frc812.BB9.RobotMap;
 import org.usfirst.frc812.BB9.commands.*;
 
@@ -47,10 +48,11 @@ public class DriveTrain extends Subsystem {
     	// The third parameter, squaredInputs, was not tried as true, so we should 
     	// drive test is next time.
     	robotDrive.arcadeDrive(-right.getY(), -right.getX(), true);
-//    	System.out.println("Gyro Angle: " + RobotMap.gyro.getAngle() +
-//    						" Center: " + RobotMap.gyro.getCenter() + 
-//    						" Rate: " + RobotMap.gyro.getRate());
- 
+        if(Robot.controlBoxSubsystem.isSet(7)) {
+      	  RobotMap.compressor.start();
+        } else {
+      	  RobotMap.compressor.stop();
+        }
     }
     
     public void stop() {

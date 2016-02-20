@@ -2,15 +2,15 @@
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item value="false" key="isRegEx"/>
-		<item value="CANTalon" key="selection"/>
+		<item value="compressor" key="selection"/>
 		<item value="false" key="casesensitive"/>
 		<item value="false" key="incremental"/>
 		<item value="true" key="wrap"/>
 		<item value="false" key="wholeword"/>
 		<list key="findhistory">
+			<item value="compressor"/>
 			<item value="CANTalon"/>
 			<item value="drivetraine"/>
-			<item value="compressor"/>
 			<item value="control"/>
 			<item value="controlbox"/>
 			<item value="shooter"/>

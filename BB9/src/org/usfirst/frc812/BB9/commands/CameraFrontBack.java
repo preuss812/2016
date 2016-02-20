@@ -15,17 +15,17 @@ public class CameraFrontBack extends CommandGroup {
     }
 
     public void cancel() {
-   		Robot.cameraControl.left();
-    	Robot.cameraControl.levelLeftTrim();
-    	System.out.println("CameraFrontBack leftTrim");
-   		forward = false;
-    }
-    public void start() {
    		Robot.cameraControl.right();
     	Robot.cameraControl.levelRightTrim();
     	Robot.gyroSubsystem.showPosition();
     	System.out.println("CameraFrontBack rightTrim");
-       	forward = true;
+       	forward = false;
+    }
+    public void start() {
+   		Robot.cameraControl.left();
+    	Robot.cameraControl.levelLeftTrim();
+    	System.out.println("CameraFrontBack leftTrim");
+   		forward = true;
     }		
         // To run multiple commands at the same time,
         // use addParallel()

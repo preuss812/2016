@@ -2,6 +2,7 @@ package org.usfirst.frc812.BB9.subsystems;
 
 import org.usfirst.frc812.BB9.Robot;
 import org.usfirst.frc812.BB9.RobotMap;
+import org.usfirst.frc812.BB9.commands.CameraFrontBack;
 
 import edu.wpi.first.wpilibj.Joystick;
 import edu.wpi.first.wpilibj.command.Subsystem;
@@ -52,13 +53,18 @@ public class ControlBoxSubsystem extends Subsystem {
     public void printBits() {
     	readBits();
     	System.out.println("ControlBox bits: " + Integer.toBinaryString(flagBits));
+    	String prespace = "";
+    	System.out.print("Switches: ");
     	for (int i = 1; i<=7; i++) {
-    		if( isSet(i) )
-    			System.out.println("switch " + i + " on");
+    		System.out.print(prespace + i + "=" + (isSet(i) ? "on":"off"));
+    		prespace = " ";
     	}
-    	System.out.println("ControlBox pot 0: " + getPotValue(0));
-    	System.out.println("ControlBox pot 1: " + getPotValue(1));
-    	System.out.println("Intake Position Sensor: " + Robot.grabberSensorSubsystem.get());
+    	System.out.println("");
+    	System.out.println("ControlBox pot 0:  " + getPotValue(0));
+    	System.out.println("ControlBox pot 1:  " + getPotValue(1));
+    	System.out.println("Intake position via switch sensor: " + (Robot.grabberSensorSubsystem.get() ? "In":"Out"));
+    	System.out.println("Gyro angle: " + RobotMap.gyro.getAngle() );
+    	System.out.println("Camera position: "+ (CameraFrontBack.forward ? "Front":"Back"));
     }
     
     public double getPotValue(int axis) {
