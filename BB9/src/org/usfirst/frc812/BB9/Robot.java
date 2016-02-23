@@ -83,8 +83,6 @@ public class Robot extends IterativeRobot {
         // Ball gatherer has to be down by default as the shooter is down by default
         // and will conflict with the gatherer
         
-        Robot.ballGathererSubsystem.down();
-
         autonomousCommand = new AutonomousCommand();
         
         
@@ -121,6 +119,7 @@ public class Robot extends IterativeRobot {
         // continue until interrupted by another command, remove
         // this line or comment it out.
         if (autonomousCommand != null) autonomousCommand.cancel();
+        new PrimeCatapultSequence();
     }
 
     /**
