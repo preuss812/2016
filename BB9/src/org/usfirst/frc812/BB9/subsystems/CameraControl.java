@@ -24,7 +24,8 @@ public class CameraControl extends Subsystem {
 	public void left() {
 		this.center();
 //		horizontal.setAngle((Robot.controlBoxSubsystem.getPotValue(1)+1)*90);
-		horizontal.setAngle((-0.79+1)*90);
+//		horizontal.setAngle((-0.79+1)*90);
+		horizontal.setAngle(170);		//Moved camera position to middle of robot, so set angle back to 170
 	}
 	public void right() {
 		this.center();
@@ -35,7 +36,8 @@ public class CameraControl extends Subsystem {
 		 
 		horizontal.setAngle((Robot.controlBoxSubsystem.getPotValue(1)+1)*90);
 		*/
-		horizontal.setAngle((0.77+1)*90); // .77 is the pot value determined via above
+//		horizontal.setAngle((0.77+1)*90); // .77 is the pot value determined via above
+		horizontal.setAngle(0);	//Moved camera position to middle of robot, so set angle back to 0
 	}
 	
 	public void levelLeftTrim(){
