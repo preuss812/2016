@@ -77,7 +77,7 @@ public class OI {
         
         
         // Left Joystick buttons
-        shootButton            = new JoystickButton(leftJoystick,1);
+        shootButton            = new JoystickButton(leftJoystick,3);
         raiseLowerBallGathererButton = new JoystickButton(leftJoystick,2);
         gathererMotorStart = new JoystickButton(leftJoystick,4);
          
