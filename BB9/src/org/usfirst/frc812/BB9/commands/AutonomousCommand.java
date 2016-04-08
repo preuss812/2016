@@ -44,7 +44,7 @@ public class AutonomousCommand extends Command {
         	setTimeout(7.0);
         }
         else if(Robot.controlBoxSubsystem.isSet(6)) {		//Cheval
-        	setTimeout(10.0);
+        	setTimeout(7.0);
         }
         else{
         	setTimeout(7.0);
@@ -62,16 +62,16 @@ public class AutonomousCommand extends Command {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-        	/*
+        	
         	Robot.ballGathererSubsystem.up();
-        	try {
+        	try {        	
 				Thread.sleep(1000);
 			} catch (InterruptedException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
         	Robot.ballGathererSubsystem.down();
-        	*/
+        	
     	}
     	RobotMap.dtProductionRobotDrive.drive(0, 0);
     	RobotMap.dtProductionRobotDrive.setExpiration(0.1);
@@ -92,7 +92,7 @@ public class AutonomousCommand extends Command {
     		RobotMap.dtProductionRobotDrive.drive(1.00, Robot.gyroSubsystem.calcCurve()); // straight
     	} 
     	else if(Robot.controlBoxSubsystem.isSet(6)) {		//Cheval
-    		RobotMap.dtProductionRobotDrive.drive(0.50, Robot.gyroSubsystem.calcCurve()); // straight
+    		RobotMap.dtProductionRobotDrive.drive(0.60, Robot.gyroSubsystem.calcCurve()); // straight
     	} 
     	else{
     		RobotMap.dtProductionRobotDrive.drive(.90, Robot.gyroSubsystem.calcCurve()); // straight

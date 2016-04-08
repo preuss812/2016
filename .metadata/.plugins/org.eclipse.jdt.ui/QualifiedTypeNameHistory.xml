@@ -21,7 +21,8 @@
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.GathererMotor"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.CameraVerticalContinuousCommand"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.Robot"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.RobotMap"/>
 <fullyQualifiedTypeName name="org.usfirst.frc812.BB9.commands.CameraFrontBack"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="edu.wpi.first.wpilibj.AnalogInput"/>
 </qualifiedTypeNameHistroy>
