@@ -31,7 +31,7 @@ public class GyroSubsystem extends Subsystem {
     public double calcCurve() {
     	double angle = gyro.getAngle();
     	double curve = angle * kP;
-    	System.out.println("angle: " + angle + " curve: " + curve );
+ //   	System.out.println("angle: " + angle + " curve: " + curve );
     	return curve;
     }
 }
